@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Scene Analyzer - Professional Vision Intelligence</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>AI Scene Analyzer</h1>
+            <p class="subtitle">Professional Vision Intelligence Platform</p>
+        </div>
+        <div class="content">
+            <div class="controls">
+                <select id="cameraSelect"></select>
+                <button id="switchCamera">📷 Switch Camera</button>
+                <input type="file" id="imageUpload" accept="image/*">
+            </div>
+        <div class="preview">
+            <video id="video" autoplay playsinline></video>
+            <canvas id="canvas" style="display:none;"></canvas>
+        </div>
+        <div class="actions">
+            <button id="capture">📸 Capture & Analyze</button>
+        </div>
+            <div class="results" id="results">
+                <h2 class="section-header">📊 Analysis Results</h2>
+                <div id="resultContent">🎯 Ready to analyze! Capture an image or upload a file to get started.</div>
+            </div>
+            
+            <!-- Chat Interface -->
+            <div class="chat-container" id="chatContainer" style="display: none;">
+                <h2 class="section-header">💬 Chat with Image</h2>
+                <div class="chat-messages" id="chatMessages"></div>
+                <div class="chat-input-container">
+                    <input type="text" id="chatInput" placeholder="Ask anything about this image..." />
+                    <button id="sendMessage">Send</button>
+                    <button id="clearChat">Clear</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/static/app.js"></script>
+</body>
+</html> 
