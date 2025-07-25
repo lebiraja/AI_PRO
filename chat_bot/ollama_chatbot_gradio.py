@@ -5,7 +5,7 @@ import google.generativeai as genai
 # Configuration
 OLLAMA_API_URL = "http://localhost:11434/api/generate"
 DEFAULT_OLLAMA_MODEL = "llama3.2"
-GEMINI_API_KEY = "AIzaSyDtlItcSiiPnio7QKFy_oimOuzgLrAC9yI"
+GEMINI_API_KEY = "_________________"
 
 # Initialize Gemini API
 genai.configure(api_key=GEMINI_API_KEY)
